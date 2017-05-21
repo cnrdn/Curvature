@@ -5,7 +5,15 @@ Meyer, Mark, et al. "Discrete differential-geometry operators for triangulated 2
 
 ### Installation 
 
-(in progress)
+You can grab the sources by cloning this repository or downloading a .zip archive of the sources. In order to build the project, navigate to the created directory and in a command prompt type:
+
+mkdir build
+
+cd build
+
+cmake ..
+
+make
 
 ### Usage 
 
