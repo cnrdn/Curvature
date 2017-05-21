@@ -156,8 +156,6 @@ int mean_curvature(pMesh mesh, double *curv){
       cotalpha = cotan(ppt,pptj,pptjj);
       cotbeta = cotan(ppt,pptjj,pptj);
       
-      fprintf(stdout,"  -- cot %f %f  \n",cotalpha,cotbeta);
-      
       for(i=0;i<3;i++) {
         curvpt[i] += cotalpha*(ppt->c[i] - pptjj->c[i]);
         curvpt[i] += cotbeta*(ppt->c[i] - pptj->c[i]);
@@ -209,6 +207,8 @@ int main(int argc, char**argv){
   if ( !hashTria(&mesh)) return 0;
   if ( !mean_curvature(&mesh,sol.u)) return 0;
   if(! saveSol(&sol,&mesh) ) return 1;
+  
+  /*free memory */
   free(sol.u);
   
   return 0;
