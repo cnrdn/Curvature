@@ -5,8 +5,17 @@ Meyer, Mark, et al. "Discrete differential-geometry operators for triangulated 2
 
 ### Installation 
 
-
+(in progress)
 
 ### Usage 
 
+(in progress)
+
+### Authors and contributors
+
+curvature has been initiated by Chiara Nardoni (Université Pierre et Marie Curie).
+
+### License
+
+curvature is given under the [terms of the GNU Lesser General Public License] (LICENSE.md).
 
